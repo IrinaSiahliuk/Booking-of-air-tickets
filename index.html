@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <title>Booking of air tickets</title>
+</head>
+<body>
+    <header>
+        <h1>Бронь авиабилетов</h1>
+    </header>
+    <section>
+        <div class="booked-seat">Место забронировано!</div>
+        <form class="form-add">
+            <!-- <input type="text" id="destination" placeholder="Пункт назначения"/> -->
+            <select name="destination" id="destination">
+                <option disabled>Пункт назначения</option>
+                <option value="Минск">Минск</option>
+                <option value="Москва">Москва</option>
+            </select>
+
+            <!-- <input type="text" id="time" placeholder="Время"/> -->
+            <select name="time" id="time">
+                <option disabled>Время</option>
+                <option value="12.00">12.00</option>
+                <option value="14.00">14.00</option>
+                <option value="18.00">18.00</option>
+            </select>
+            <input type="text" id="kol" placeholder="Кол-во мест"/>
+            <div class="radio-type">
+                <p><input type="radio" name="type" id="economy" value="economy" checked />Эконом</p>
+                <p><input type="radio" name="type" id="business" value="business" />Бизнес</p>
+            </div>
+            <button id="book-btn">Забронировать</button>
+        </form>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
